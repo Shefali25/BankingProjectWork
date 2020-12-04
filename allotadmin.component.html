@@ -1,0 +1,19 @@
+<p>allotadmin works!</p>
+<table border="1">
+    <tr>
+        <th>Customer ID</th>
+        <th>Customer's First Name</th>
+        <th>Customer's Middle Name</th>
+        <th>Customer's Last Name</th>
+        <th>Customer's Mobile Number</th>
+        <th>Button</th>
+    </tr>
+    <tr *ngFor="let p of custalloted">
+        <td>{{p.cust_id}}</td>
+        <td>{{p.first_name}}</td>
+        <td>{{p.middle_name}}</td>
+        <td>{{p.last_name}}</td>
+        <td>{{p.mobile_number}}</td>
+        <td><button>View Details</button></td>
+    </tr>
+</table>

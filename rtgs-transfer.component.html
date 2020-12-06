@@ -96,6 +96,12 @@
                 </div>
             </div>
         </div>
+        
+        <div *ngIf="error">
+        <div class="alert alert-danger">
+            {{message}}
+        </div>
+        </div>
         <div *ngIf="success">
             <div class="alert alert-success">
                 {{message}}
@@ -108,7 +114,7 @@
         <div class='alert alert-primary'>
             <div class="form-group">
                 <label for="transaction_password">Enter Transaction password</label>
-                <input class="form-control" name="transaction_password" [(ngModel)]="transaction_password"
+                <input class="form-control" name="transaction_password" [(ngModel)]="transaction_password" type="password"
                      id="transaction_password">
             </div>
             <div class="btn btn-primary" (click)="CheckPassword()">Enter</div>

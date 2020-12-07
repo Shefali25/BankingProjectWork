@@ -122,7 +122,7 @@
             color: #1d2124
         }
         input[type=date]{
-            width: calc(50% - 57px);
+            width: calc(75% - 57px);
             height: 36px;
             margin: 13px 0 0 -5px;
             padding-left: 10px;
